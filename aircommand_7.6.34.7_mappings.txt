@@ -1,0 +1,131 @@
+androidx.picker.widget.a -> androidx.picker.widget.loadAppPackageList:
+    void G() -> onClickFindAttachedPenAddr
+b2.h -> b2.h:
+    void L(java.lang.String) -> markGestureType
+c3.b -> c3.b:
+    java.util.UUID b -> UUID_LEGACY_SPEN_SERVICE
+    java.util.UUID c -> UUID_SPEN_SERVICE
+C1.b -> com.samsung.android.service.aircommand.util.debug.Assert:
+com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity -> com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity:
+    p3.c p -> mTransactionLogViewController
+    void f(java.lang.String) -> addTransactionLog
+d3.a -> com.samsung.android.service.aircommand.remotespen.core.feedback.RemoteFeedbackListener:
+    void a(T2.e,long) -> onFeedbackArrived
+D2.a -> com.samsung.android.service.aircommand.remotespen.core.device.ble.constants.BleSpenUuid:
+    java.util.UUID a -> BUTTON_EVENT
+    java.util.UUID b -> BATTERY_LEVEL
+    java.util.UUID c -> BATTERY_LEVEL_RAW
+    java.util.UUID d -> FW_VER
+    java.util.UUID e -> MODE
+    java.util.UUID f -> CHARGE_STATUS
+    java.util.UUID g -> SELF_TEST
+    java.util.UUID h -> RAW_SENSOR_DATA
+    java.util.UUID i -> EASY_CONNECT_ID
+    java.util.UUID j -> FMM_CONFIG
+    java.util.UUID k -> LED_STATE
+    java.util.UUID l -> PEN_LOG
+    java.util.UUID m -> PEN_FREQUENCY
+    java.util.UUID n -> OBFUSCATION_TABLE
+    java.util.UUID o -> PEN_SYNC_CLOCK
+    java.util.UUID p -> CHARACTERISTIC_CONFIG
+    java.lang.String a(java.util.UUID) -> getName
+f3.a -> f3.a:
+    java.lang.Object b -> mByteList
+    void a(byte[]) -> appendData
+F2.a -> com.samsung.android.service.aircommand.remotespen.core.device.chargepolicy.BleSpenBlindChargeController:
+F2.d -> com.samsung.android.service.aircommand.remotespen.core.device.chargepolicy.BleSpenChargeController:
+h2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.SpenInstanceIdHelper:
+    java.lang.Object b -> mContext
+    java.lang.Object c -> mInstanceId
+    T2.h b(java.lang.String) -> createInstanceId
+    T2.h c(z1.a,java.lang.String) -> createInstanceId
+n5.a -> com.samsung.android.service.aircommand.util.debug.Log:
+N1.a -> N1.DeviceFeatures:
+    boolean a -> UNPACK_SUPPORT
+    boolean b -> BIXBY_SUPPORT
+    boolean c -> DIRECT_WRITING_SUPPORT
+    boolean d -> QUICK_CONNECT_SUPPORT
+    boolean e -> SCREEN_RECORDER_SUPPORT
+    boolean f -> SURVEY_MODE_ENABLED
+    boolean i -> FIRST_API_BELLOW_34
+    java.lang.String k -> BLE_SPEN_SPECS
+    java.lang.String l -> S_PEN_GARAGE_SPEC
+    boolean m -> DEVICE_BLUR_SUPPORT
+    boolean n -> NATIVE_AI_SUPPORT
+    boolean u -> BleSpenNotSupported
+o5.b -> com.samsung.context.sdk.samsunganalytics.internal.sender.DLS:
+O1.b -> com.samsung.android.service.aircommand.util.sep.SemFloatingFeatureWrapper:
+    boolean a(java.lang.String) -> hasFeature
+    boolean b(java.lang.String) -> getFeature
+    int c() -> getSpenVersion
+    int d() -> getAiVersion
+    java.lang.String e(java.lang.String) -> getString
+p3.c -> p3.c:
+    void a(java.lang.String) -> addLog
+T2.d -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleConnReqData:
+    z1.a a -> mTargetSpenModelName
+    java.lang.String b -> mTargetAddress
+    int c -> mTriggerCode
+    boolean d -> mIsSpenHardResetStepEnabled
+    int e -> mResetDuration
+T2.h -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleSpenInstanceId:
+    z1.a a -> mSpenModelName
+    boolean a() -> isBundledSpen
+U2.b -> com.samsung.android.service.aircommand.remotespen.core.device.fota.FirmwareFile:
+    java.io.FileInputStream a -> mInputStream
+    byte[] b -> mBytes
+    int d -> mFileBlockSize
+    int e -> mFileChunkSize
+    int f -> mBytesAvailable
+    int h -> mChunksPerBlockCount
+    void a() -> prepare
+    void b(int,int) -> setFileBlockSize
+V2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FirmwareUpgradeDriver:
+V2.g -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Driver:
+V2.i -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.shared.BleSpenGenericDriver:
+    android.content.Context b -> mContext
+    z1.a c -> spenModelName
+    f3.a p -> mLogComposer
+    d3.a r -> mPerformCalibrationListener
+    java.lang.String h() -> getPenColorCodeFromDeviceName
+    void k(android.content.Context) -> initialize
+    void l(T2.e) -> invokeCalibrationFinishListener
+    void n(int) -> notifyBatteryLevelChanged
+    void o(h2.e,android.bluetooth.BluetoothGattCharacteristic) -> onCharacteristicChanged
+V2.j -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyDriver:
+W2.a -> com.samsung.android.service.aircommand.remotespen.core.device.fota.DialogFirmwareUpgradeDriver:
+    java.util.UUID A -> SPOTA_GPIO_MAP_UUID
+    V2.i b -> mSpenDriver
+    java.util.UUID B -> SPOTA_MEM_INFO_UUID
+    V2.c c -> mBleDriver
+    java.util.UUID C -> SPOTA_PATCH_LEN_UUID
+    java.util.UUID D -> SPOTA_PATCH_DATA_UUID
+    int e -> mMtu
+    java.util.UUID E -> SPOTA_SERV_STATUS_UUID
+    int f -> mPatchDataSize
+    java.util.UUID F -> CLIENT_CONFIG_DESCRIPTOR
+    int g -> mFileChunkSize
+    java.util.UUID G -> SUOTA_VERSION_UUID
+    java.lang.String h -> mFirmwareFilePathName
+    java.util.UUID H -> SUOTA_PATCH_DATA_CHAR_SIZE_UUID
+    U2.b i -> mFirmwareFile
+    java.util.UUID I -> SUOTA_MTU_UUID
+    java.util.HashMap j -> mErrorMap
+    java.util.UUID J -> SUOTA_L2CAP_PSM_UUID
+    java.util.UUID K -> ORG_BLUETOOTH_CHARACTERISTIC_MANUFACTURER_NAME_STRING
+    java.util.UUID L -> ORG_BLUETOOTH_CHARACTERISTIC_MODEL_NUMBER_STRING
+    java.util.UUID M -> ORG_BLUETOOTH_CHARACTERISTIC_FIRMWARE_REVISION_STRING
+    boolean n -> mEndSignalSent
+    java.util.UUID N -> ORG_BLUETOOTH_CHARACTERISTIC_SOFTWARE_REVISION_STRING
+    boolean p -> mIsFinished
+    java.util.UUID y -> SPOTA_SERVICE_UUID
+    java.util.UUID z -> SPOTA_MEM_DEV_UUID
+    void a(int) -> finishWithError
+    void d() -> release
+    void e(W2.b) -> setRemoteFeedbackListener
+    void f() -> writeEndSignal
+    void g() -> updateFileChunkSize
+x1.f -> com.samsung.android.service.aircommand.util.features.ModelFeatures:
+    boolean a() -> isBundledSpenSupportBle
+    z1.a c() -> getSpenModelName
+z1.a -> com.samsung.android.service.aircommand.util.features.SpenModelName:
