@@ -1,11 +1,19 @@
+androidx.core.view.n -> com.samsung.android.service.aircommand.util.SeslBaseReflector:
+    b3.d n(z1.a) -> createSpenFactory
 androidx.picker.widget.a -> androidx.picker.widget.loadAppPackageList:
     void G() -> onClickFindAttachedPenAddr
 b2.h -> b2.h:
     void L(java.lang.String) -> markGestureType
+b3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.builtin.BleSpenBuiltinFactory:
+b3.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyFactory:
+b3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Factory:
+b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceFactory:
+    java.util.HashMap a -> mFactoryMap
 c3.b -> c3.b:
     java.util.UUID b -> UUID_LEGACY_SPEN_SERVICE
     java.util.UUID c -> UUID_SPEN_SERVICE
 C1.b -> com.samsung.android.service.aircommand.util.debug.Assert:
+    void c(java.lang.Object) -> notNull
 com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity -> com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity:
     p3.c p -> mTransactionLogViewController
     void f(java.lang.String) -> addTransactionLog
