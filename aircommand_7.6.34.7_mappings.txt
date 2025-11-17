@@ -7,12 +7,13 @@ androidx.picker.widget.a -> androidx.picker.widget.loadAppPackageList:
 b2.h -> b2.h:
     void L(java.lang.String) -> markGestureType
 b3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.builtin.BleSpenBuiltinFactory:
-b3.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyFactory:
 b3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Factory:
+    k3.a e(android.content.Context) -> getWacomChargingDriver
 b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceFactory:
     java.util.HashMap a -> mFactoryMap
     V2.i a() -> createBleSpenDriver
     b3.d c(z1.a) -> getInstance
+b3.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyFactory:
 c3.b -> c3.b:
     java.util.UUID b -> UUID_LEGACY_SPEN_SERVICE
     java.util.UUID c -> UUID_SPEN_SERVICE
@@ -118,6 +119,7 @@ V2.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
     void U(D0.d,android.bluetooth.BluetoothGattCharacteristic) -> onCharacteristicChanged
     void V(D0.d,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicRead
     void W(D0.d,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicWrite
+V2.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.builtin.BleSpenBuiltinDriver:
 V2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FirmwareUpgradeDriver:
 V2.g -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Driver:
 V2.i -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.shared.BleSpenGenericDriver:
