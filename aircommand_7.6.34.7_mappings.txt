@@ -1,5 +1,7 @@
 androidx.core.view.n -> com.samsung.android.service.aircommand.util.SeslBaseReflector:
     b3.d n(z1.a) -> createSpenFactory
+androidx.core.view.y0 -> androidx.core.view.y0:
+    int u(android.content.Context) -> getDeviceBatteryTemperature
 androidx.picker.widget.a -> androidx.picker.widget.loadAppPackageList:
     void G() -> onClickFindAttachedPenAddr
 b2.h -> b2.h:
@@ -9,6 +11,8 @@ b3.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
 b3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Factory:
 b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceFactory:
     java.util.HashMap a -> mFactoryMap
+    V2.i a() -> createBleSpenDriver
+    b3.d c(z1.a) -> getInstance
 c3.b -> c3.b:
     java.util.UUID b -> UUID_LEGACY_SPEN_SERVICE
     java.util.UUID c -> UUID_SPEN_SERVICE
@@ -41,13 +45,35 @@ f3.a -> f3.a:
     java.lang.Object b -> mByteList
     void a(byte[]) -> appendData
 F2.a -> com.samsung.android.service.aircommand.remotespen.core.device.chargepolicy.BleSpenBlindChargeController:
+    K1.c o -> mHandlerThread
+    boolean r -> mIsRunning
+    int s -> mPhoneBatteryTemperature
+    void a() -> onPhoneBatteryStateChanged
+    void c(boolean) -> onLockStateChanged
+    void d(boolean) -> stopCharge
+    void e() -> start
+    void f() -> stop
+    boolean g() -> isDisconnected
+    void h() -> reserveCharge
+    void i() -> stopCharge
 F2.d -> com.samsung.android.service.aircommand.remotespen.core.device.chargepolicy.BleSpenChargeController:
 h2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.SpenInstanceIdHelper:
     java.lang.Object b -> mContext
     java.lang.Object c -> mInstanceId
     T2.h b(java.lang.String) -> createInstanceId
     T2.h c(z1.a,java.lang.String) -> createInstanceId
+k3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.WacomChargingDriver:
+    java.util.concurrent.ExecutorService d -> mExecutor
+    void a() -> ensureMinTransactionInterval
+    void b(java.lang.Runnable) -> ensureNotMainThread
+    void c() -> resetSpen
+    void e() -> startCharge
+    void f() -> startContinuousCharge
+    void g() -> stopCharge
+    void i(java.lang.String) -> ensureCommandWriteInterval
 n5.a -> com.samsung.android.service.aircommand.util.debug.Log:
+    int H(java.lang.String,java.lang.String,java.lang.Exception) -> e
+    int o0(java.lang.String,java.lang.String,org.json.JSONException) -> i
 N1.a -> N1.DeviceFeatures:
     boolean a -> UNPACK_SUPPORT
     boolean b -> BIXBY_SUPPORT
@@ -88,6 +114,10 @@ U2.b -> com.samsung.android.service.aircommand.remotespen.core.device.fota.Firmw
     int h -> mChunksPerBlockCount
     void a() -> prepare
     void b(int,int) -> setFileBlockSize
+V2.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenBleDriver:
+    void U(D0.d,android.bluetooth.BluetoothGattCharacteristic) -> onCharacteristicChanged
+    void V(D0.d,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicRead
+    void W(D0.d,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicWrite
 V2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FirmwareUpgradeDriver:
 V2.g -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Driver:
 V2.i -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.shared.BleSpenGenericDriver:
