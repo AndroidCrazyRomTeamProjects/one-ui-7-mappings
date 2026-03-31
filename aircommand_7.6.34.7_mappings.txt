@@ -13,11 +13,13 @@ b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
     java.util.HashMap a -> mFactoryMap
     V2.i a() -> createBleSpenDriver
     b3.d c(z1.a) -> getInstance
+    c3.b d() -> getDeviceFeature
 b3.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyFactory:
 c3.b -> c3.b:
     java.util.UUID b -> UUID_LEGACY_SPEN_SERVICE
     java.util.UUID c -> UUID_SPEN_SERVICE
 C1.b -> com.samsung.android.service.aircommand.util.debug.Assert:
+    void b(java.lang.String,boolean) -> e
     void c(java.lang.Object) -> notNull
 com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity -> com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity:
     p3.c p -> mTransactionLogViewController
@@ -42,6 +44,8 @@ D2.a -> com.samsung.android.service.aircommand.remotespen.core.device.ble.consta
     java.util.UUID o -> PEN_SYNC_CLOCK
     java.util.UUID p -> CHARACTERISTIC_CONFIG
     java.lang.String a(java.util.UUID) -> getName
+e3.o -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceMainController:
+e3.q -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ConnectionState:
 f3.a -> f3.a:
     java.lang.Object b -> mByteList
     void a(byte[]) -> appendData
@@ -63,6 +67,13 @@ h2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.Sp
     java.lang.Object c -> mInstanceId
     T2.h b(java.lang.String) -> createInstanceId
     T2.h c(z1.a,java.lang.String) -> createInstanceId
+H2.l -> H2.l:
+    android.content.Context d -> mContext
+    z1.a f -> mTargetSpenModelName
+    T2.h g -> mSpenInstanceId
+    V2.i i -> mBleSpenDriver
+    void h(android.content.Context,T2.h) -> initialize
+    void m(H2.m) -> registerStateListener
 k3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.WacomChargingDriver:
     java.util.concurrent.ExecutorService d -> mExecutor
     void a() -> ensureMinTransactionInterval
@@ -73,8 +84,11 @@ k3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
     void g() -> stopCharge
     void i(java.lang.String) -> ensureCommandWriteInterval
 n5.a -> com.samsung.android.service.aircommand.util.debug.Log:
+    void b1(java.lang.String,java.lang.String,java.lang.String) -> writeLogInternal
+    void F(java.lang.String,java.lang.String) -> i
     int H(java.lang.String,java.lang.String,java.lang.Exception) -> e
     int o0(java.lang.String,java.lang.String,org.json.JSONException) -> i
+    void r1(java.lang.String,java.lang.String) -> v
 N1.a -> N1.DeviceFeatures:
     boolean a -> UNPACK_SUPPORT
     boolean b -> BIXBY_SUPPORT
