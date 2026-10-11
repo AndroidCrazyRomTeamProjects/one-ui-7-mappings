@@ -13,11 +13,32 @@ b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
     java.util.HashMap a -> mFactoryMap
     V2.i a() -> createBleSpenDriver
     b3.d c(z1.a) -> getInstance
+    c3.c b() -> getApplicationFeature
     c3.b d() -> getDeviceFeature
 b3.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyFactory:
-c3.b -> c3.b:
+c3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.builtin.BuiltinSpenDeviceFeature:
+c3.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceFeature:
     java.util.UUID b -> UUID_LEGACY_SPEN_SERVICE
     java.util.UUID c -> UUID_SPEN_SERVICE
+    int a() -> getMaxMotionMovementValue
+    int b() -> getStandbyTimeoutMs
+    int c(android.content.Context,boolean) -> getMinChargeDurationForSpenBoot
+    int d() -> getMotionStayRangeThreshold
+    java.lang.String e() -> getPenTypeString
+    A2.t f() -> getScanFilter
+    boolean g() -> isBundleTypeSpen
+    boolean h() -> isSupportAutoConnect
+    boolean i() -> isSupportButtonDownUpEvent
+    boolean j() -> isSupportChargeState
+    boolean k() -> isSupportEasyConnect
+    boolean l() -> isSupportFmmConfigPolicy
+    boolean m() -> isSupportLed
+    boolean n() -> isSupportMotionSensor
+    boolean o() -> isSupportPenFrequencyChange
+    boolean p() -> isSupportPenColorCode
+    boolean q() -> isSupportWacomCharger
+    boolean r() -> isSupportStandbyMode
+c3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenApplicationFeature:
 C1.b -> com.samsung.android.service.aircommand.util.debug.Assert:
     void b(java.lang.String,boolean) -> e
     void c(java.lang.Object) -> notNull
@@ -103,6 +124,7 @@ N1.a -> N1.DeviceFeatures:
     boolean n -> NATIVE_AI_SUPPORT
     boolean u -> BleSpenNotSupported
 o5.b -> com.samsung.context.sdk.samsunganalytics.internal.sender.DLS:
+P6.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FmmDriver:
 O1.b -> com.samsung.android.service.aircommand.util.sep.SemFloatingFeatureWrapper:
     boolean a(java.lang.String) -> hasFeature
     boolean b(java.lang.String) -> getFeature
@@ -179,6 +201,8 @@ W2.a -> com.samsung.android.service.aircommand.remotespen.core.device.fota.Dialo
     void e(W2.b) -> setRemoteFeedbackListener
     void f() -> writeEndSignal
     void g() -> updateFileChunkSize
+A2.t -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleSpenScanFilter:
+P6.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FmmDriver:
 x1.f -> com.samsung.android.service.aircommand.util.features.ModelFeatures:
     boolean a() -> isBundledSpenSupportBle
     z1.a c() -> getSpenModelName
