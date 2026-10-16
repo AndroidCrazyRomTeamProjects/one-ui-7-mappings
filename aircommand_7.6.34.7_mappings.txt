@@ -1,3 +1,4 @@
+A2.t -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleSpenScanFilter:
 androidx.core.view.n -> com.samsung.android.service.aircommand.util.SeslBaseReflector:
     b3.d n(z1.a) -> createSpenFactory
 androidx.core.view.y0 -> androidx.core.view.y0:
@@ -12,8 +13,8 @@ b3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
 b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceFactory:
     java.util.HashMap a -> mFactoryMap
     V2.i a() -> createBleSpenDriver
-    b3.d c(z1.a) -> getInstance
     c3.c b() -> getApplicationFeature
+    b3.d c(z1.a) -> getInstance
     c3.b d() -> getDeviceFeature
 b3.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.sticky.BleSpenStickyFactory:
 c3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.builtin.BuiltinSpenDeviceFeature:
@@ -45,8 +46,8 @@ C1.b -> com.samsung.android.service.aircommand.util.debug.Assert:
 com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity -> com.samsung.android.service.aircommand.ui.verification.internal.BleSpenDriverTestActivity:
     p3.c p -> mTransactionLogViewController
     void f(java.lang.String) -> addTransactionLog
-d3.a -> com.samsung.android.service.aircommand.remotespen.core.feedback.RemoteFeedbackListener:
-    void a(T2.e,long) -> onFeedbackArrived
+d3.a -> com.samsung.android.service.aircommand.remotespen.core.feedback.OperationFinishListener:
+    void a(T2.e,long) -> onFinish
 D2.a -> com.samsung.android.service.aircommand.remotespen.core.device.ble.constants.BleSpenUuid:
     java.util.UUID a -> BUTTON_EVENT
     java.util.UUID b -> BATTERY_LEVEL
@@ -201,7 +202,6 @@ W2.a -> com.samsung.android.service.aircommand.remotespen.core.device.fota.Dialo
     void e(W2.b) -> setRemoteFeedbackListener
     void f() -> writeEndSignal
     void g() -> updateFileChunkSize
-A2.t -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleSpenScanFilter:
 P6.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FmmDriver:
 x1.f -> com.samsung.android.service.aircommand.util.features.ModelFeatures:
     boolean a() -> isBundledSpenSupportBle
