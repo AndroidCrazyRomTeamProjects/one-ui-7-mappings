@@ -11,6 +11,7 @@ b2.h -> b2.h:
     void L(java.lang.String) -> markGestureType
 b3.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.builtin.BleSpenBuiltinFactory:
 b3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ext1.BleSpenExt1Factory:
+    c3.c c -> sApplicationFeature
     k3.a e(android.content.Context) -> getWacomChargingDriver
 b3.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenDeviceFactory:
     java.util.HashMap a -> mFactoryMap
@@ -42,6 +43,15 @@ c3.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.fa
     boolean q() -> isSupportWacomCharger
     boolean r() -> isSupportStandbyMode
 c3.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.BleSpenApplicationFeature:
+    boolean a -> SupportAirAction
+    boolean b -> SupportAppGestureAction
+    boolean c -> SupportAnywhereAction
+    boolean d -> SupportBlindCharge
+    boolean e -> SupportFirmwareUpdate
+    int f -> modelName
+    int g -> modelNo
+    boolean h -> SupportFmm
+    boolean i -> SupportAdvancedCharge
 C1.b -> com.samsung.android.service.aircommand.util.debug.Assert:
     void b(java.lang.String,boolean) -> e
     void c(java.lang.Object) -> notNull
