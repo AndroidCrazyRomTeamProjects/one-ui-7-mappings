@@ -210,3 +210,39 @@ x1.f -> com.samsung.android.service.aircommand.util.features.ModelFeatures:
 z1.a -> com.samsung.android.service.aircommand.util.features.SpenModelName:
 Z2.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.DeviceOpenTransaction:
 Z2.i -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.Transaction:
+b3.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.nonble.BleSpenNonBleFactory:
+    V2.i a() -> createBleSpenDriver
+    c3.c b() -> getApplicationFeature
+    c3.b d() -> getDeviceFeature
+    k3.a e(android.content.Context) -> getWacomChargingDriver
+Z2.a -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ConnectTransaction:
+    void a(LV2.c) -> execute
+Z2.c -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.DisconnectTransaction:
+    void a(LV2.c) -> execute
+Z2.d -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.EnableNotiTransaction:
+    java.util.UUID f -> mServiceUuid
+    java.util.UUID g -> mCharacteristicUuid
+    boolean h -> mEnable
+    boolean i -> mUseCccdDescriptor
+    void a(LV2.c) -> execute
+Z2.e -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.MtuRequestTransaction:
+    int f -> mMtu
+    void a(LV2.c) -> execute
+Z2.f -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ReadCharacteristicTransaction:
+    java.util.UUID f -> mServiceUuid
+    java.util.UUID g -> mCharacteristicUuid
+    void a(LV2.c) -> execute
+Z2.g -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ReadRemoteRssiTransaction:
+    void a(LV2.c) -> execute
+Z2.h -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.ServiceDiscoveryTransaction:
+    void a(LV2.c) -> execute
+Z2.j -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.TransactionManager$TransactionItem:
+    Z2.i a -> mTransaction
+    int b -> mTimeout
+    LA2/q c -> mFinishListener
+Z2.k -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.WriteCharacteristicTransaction:
+    java.util.UUID f -> mServiceUuid
+    java.util.UUID g -> mCharacteristicUuid
+    byte[] h -> mValue
+    android.bluetooth.BluetoothGattCharacteristic i -> mCharacteristic
+    void a(LV2.c) -> execute
