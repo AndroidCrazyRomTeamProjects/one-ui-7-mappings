@@ -125,7 +125,6 @@ N1.a -> N1.DeviceFeatures:
     boolean n -> NATIVE_AI_SUPPORT
     boolean u -> BleSpenNotSupported
 o5.b -> com.samsung.context.sdk.samsunganalytics.internal.sender.DLS:
-P6.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FmmDriver:
 O1.b -> com.samsung.android.service.aircommand.util.sep.SemFloatingFeatureWrapper:
     boolean a(java.lang.String) -> hasFeature
     boolean b(java.lang.String) -> getFeature
@@ -134,6 +133,7 @@ O1.b -> com.samsung.android.service.aircommand.util.sep.SemFloatingFeatureWrappe
     java.lang.String e(java.lang.String) -> getString
 p3.c -> p3.c:
     void a(java.lang.String) -> addLog
+P6.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FmmDriver:
 T2.d -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleConnReqData:
     z1.a a -> mTargetSpenModelName
     java.lang.String b -> mTargetAddress
@@ -202,8 +202,9 @@ W2.a -> com.samsung.android.service.aircommand.remotespen.core.device.fota.Dialo
     void e(W2.b) -> setRemoteFeedbackListener
     void f() -> writeEndSignal
     void g() -> updateFileChunkSize
-P6.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.FmmDriver:
 x1.f -> com.samsung.android.service.aircommand.util.features.ModelFeatures:
     boolean a() -> isBundledSpenSupportBle
     z1.a c() -> getSpenModelName
 z1.a -> com.samsung.android.service.aircommand.util.features.SpenModelName:
+Z2.b -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.DeviceOpenTransaction:
+Z2.i -> com.samsung.android.service.aircommand.remotespen.core.device.control.factory.Transaction:
