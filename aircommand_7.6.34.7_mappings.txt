@@ -1,5 +1,7 @@
 A2.t -> com.samsung.android.service.aircommand.remotespen.core.device.data.BleSpenScanFilter:
 androidx.core.view.n -> com.samsung.android.service.aircommand.util.SeslBaseReflector:
+    java.lang.String e(int) -> getBondState
+    java.lang.String f(int) -> convertBtStateToString
     b3.d n(z1.a) -> createSpenFactory
 androidx.core.view.y0 -> androidx.core.view.y0:
     int u(android.content.Context) -> getDeviceBatteryTemperature
